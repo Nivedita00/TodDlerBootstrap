@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>TodDler- A Shop for Your Baby !!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=DynaPuff:wght@500&family=Gentium+Book+Plus:ital,wght@1,400;1,700&family=Inter&family=Lobster&family=Qwitcher+Grypen:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Dancing+Script:wght@600&family=DynaPuff:wght@500&family=Gentium+Book+Plus:ital,wght@1,400;1,700&family=Inter&family=Lobster&family=Qwitcher+Grypen:wght@700&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Crimson+Text&family=Dancing+Script:wght@600&family=DynaPuff:wght@500&family=Gentium+Book+Plus:ital,wght@1,400;1,700&family=Inter&family=Lobster&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+
+
+  <style>
+    h2 {
+      color: rgb(22, 2, 65);
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: bold;
+    }
+
+    p {
+      color: rgb(12, 12, 12);
+      font-size: 14px;
+      font-family: 'Crimson Text', serif;
+
+    }
+
+    .imgS {
+      height: 480px;
+      width: auto;
+    }
+
+    .foot {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+    }
+    .bold{
+      color: rgb(40, 5, 5);
+      font-size: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">TodDler</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Items
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Baby Dresses</a>
+            <a class="dropdown-item" href="#">Baby Grooming & Bathing and more</a>
+            <a class="dropdown-item" href="#">Baby Drinks</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Soft Toys</a>
+            <a class="dropdown-item" href="#">Baby Story Books and Picture Books</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal"> Login</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal"> SignUp</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login into TodDler</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Create an account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="col-7">
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="State">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Zip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--image carosel-->
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 imgS" src="photo-1622290291165-d341f1938b8a.avif" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Baby Clothes</h2>
+            <p class="bold">Available in a range of adorable patterns and colors, swaddles and blankets are one of the most important
+              items of baby clothes</p>
+            <button type="button" class="btn btn-success">Clothes</button>
+            <button type="button" class="btn btn-danger">Food</button>
+            <button type="button" class="btn btn-warning">Toys</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 imgS" src="babyg1.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Baby Grooming</h2>
+            <p class="bold">Don't worry about shampooing your baby's hair too often. Whether he has a luxurious mane or just a few
+              sprouts, Ponti says a gentle massage. </p>
+            <button type="button" class="btn btn-success">Clothes</button>
+            <button type="button" class="btn btn-danger">Food</button>
+            <button type="button" class="btn btn-warning">Toys</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 imgS" src="babyfood.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Baby Food</h2>
+            <p class="bold">Ceregrow is a Food For Babies for 2-5 year old with Vitamin and Mineral for Growth & development.Nestlé
+              Ceregrow™ is a Multigrain Cereal packed with the goodness of Milk, Fruits & Grains</p>
+            <button type="button" class="btn btn-success">Clothes</button>
+            <button type="button" class="btn btn-danger">Food</button>
+            <button type="button" class="btn btn-warning">Toys</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 imgS" src="istockphoto-1203062063-170667a.jpg" alt="Fourth slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Baby Toys</h2>
+            <p class="bold">New babies will love playing with these teethers, books, play gyms and more · Manhattan Toy Winkel Rattle
+              & Sensory Teether Toy. </p>
+            <button type="button" class="btn btn-success">Clothes</button>
+            <button type="button" class="btn btn-danger">Food</button>
+            <button type="button" class="btn btn-warning">Toys</button>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!--Templates-->
+  <div class="container my-4 ">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-primary">Flat 50% Sale on Every 2500 purchase!!</strong>
+            <h6><span class="badge badge-secondary">New</span></h6>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Get Your Best choice with our Best Deals</a>
+            </h3>
+            <div class="mb-1 text-muted">Sep 10</div>
+            <p class="card-text mb-auto">coloths for newbron to toddler we get a excluisive collection for them here
+              some tip for you, how you got the perfect size for your baby, this includes onesies(0-2), bodysuits,
+              rompers, all in ones(0-2), snappies, jumpsuits(1-3), footies, bodysuits, singlets, creepers, babygro,
+              snapsuits, blanket sleepers, baby gowns,.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none d-md-block" src="babyclothes.jpg" alt=""
+            style="width: 200px; height: 250px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+
+            <strong class="d-inline-block mb-2 text-success"> Flat 40% off on 2000 Rupees Buying</strong>
+            <h6><span class="badge badge-secondary">New</span></h6>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Best Deals on Baby Food</a>
+            </h3>
+            <div class="mb-1 text-muted">Sep 12</div>
+            <p class="card-text mb-auto"> Here you get all of those, Nestlé CERELAC Fortified Baby Cereal,Nestlé
+              CEREGROW Fortified Multigrain Cereal,Enfamil A+ Infant Formula,Enfagrow A+ Nutritional Milk Powder,Early
+              Foods Organic Porridge Mixes,Nestle Nestum Infant Cereal, Similac Advance Follow-Up Infant Formula...</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none d-md-block" src="img2.jpg" alt=""
+            style="width: 200px; height: 250px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4 ">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-warning">Flat 34% Sale on Every $500!!</strong>
+            <h6><span class="badge badge-secondary">New</span></h6>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Get your Baby's Favorite Toys</a>
+            </h3>
+            <div class="mb-1 text-muted">Sep 12</div>
+            <p class="card-text mb-auto"> All types of toys are availbale in our store like Baby Balls.
+              Rattles & Plush Rings,Stroller Toys,Mirrors,Buy baby & kids toys & gaming store for educational, fun,
+              musical, electronic toys, games & more for 0-12 years.
+            </p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none d-md-block" src="img3.jfif" alt=""
+            style="width: 200px; height: 250px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+
+            <strong class="d-inline-block mb-2 text-danger"> Flat 30% off in every $500 Products !!</strong>
+            <h6><span class="badge badge-secondary">New</span></h6>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Exclusive Collection and Best Deals</a>
+            </h3>
+            <div class="mb-1 text-muted">Sep 11</div>
+            <p class="card-text mb-auto">Not only are baby grooming kits one-stop-shops for products such as shampoo,
+              conditioner and lotion, they also often contain items such as nail clippers or scissors , nasal
+              aspirators, and other important devices like thermometers and medicine spoons</p>
+            <a href="#">Continue reading</a>
+          </div>
+
+          <img class="card-img-right flex-auto d-none d-md-block" src="babygrooming2.jpg" alt="baby Grooming"
+            style="width: 200px; height: 250px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container">
+    <p class="float-right foot"><a href="#">Back to top</a></p>
+    <p class="foot">© 2020-2021 TodDler Pvt Ltd. · <a href="#">Privacy Policy</a> · <a href="#">Terms & Condition</a>
+    </p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
